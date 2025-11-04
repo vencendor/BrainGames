@@ -1,0 +1,75 @@
+{
+  "expo": {
+    "name": "FraseAPP",
+    "slug": "FraseAPP",
+    "version": "1.0.0.1",
+    "orientation": "portrait",
+    "scheme": "myapp",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+
+    "icon": "./assets/images/app-icon-1024.png",
+
+    "ios": {
+      "supportsTablet": true
+    },
+
+    "android": {
+      "package": "com.vencendor.FraseAPP",
+      "usesCleartextTraffic": true,
+
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-foreground-1024.png",
+        "backgroundColor": "#ffffff"
+      },
+
+      "notification": {
+        "icon": "./assets/images/notification-icon.png"
+      }
+    },
+
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon-48.png",
+      "themeColor": "#ffffff",
+      "backgroundColor": "#ffffff"
+    },
+
+    "plugins": [
+      "expo-router",
+
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "image": "./assets/images/splash.png",
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+
+      [
+        "@react-native-google-signin/google-signin",
+        {
+          "iosUrlScheme": "com.googleusercontent.apps.388191329113-og3drgfialkeglpbjakc8k68qidpqf41"
+        }
+      ],
+
+      "expo-font"
+    ],
+
+    "experiments": {
+      "typedRoutes": true
+    },
+
+    "extra": {
+      "router": { "origin": false },
+      "eas": { "projectId": "65168d1c-d347-459f-8c5d-eef0fd908531" }
+    }
+  }
+}

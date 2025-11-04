@@ -1,0 +1,43 @@
+{
+  "title": "FraseApp",
+
+  "title_favorite": "Избранные цитаты",
+  "title_notFavorite": "У вас пока нет избранных цитат",
+  "menu_newQuotes": "Новые цитаты",
+  "menu_yourQuotes": "Вдохновляйтесь своими ",
+  "menu_favoriteQuotes": "Избранное",
+  "menu_addQuotes": "Добавить цитату",
+  "menu_settings": "Настройки",
+  "menu_about": "О приложении",
+  "title_notFavoriteLink": "Перейти к Новым цитатам",
+  "settings_reminders": "Напоминания с вашими фразами",
+  "settings_addTimeButton": "ДОБАВИТЬ ВРЕМЯ",
+  "settings_disableNotificationsButton": "ОТКЛЮЧИТЬ УВЕДОМЛЕНИЯ",
+
+  "settings_reminderTime": "Время для вдохновения",
+  "addQuote_placeholder": "Введите вашу цитату...",
+  "addQuote_selectCategories": "Выберите категории:",
+  "addQuote_rateQuote": "Оцените цитату:",
+  "addQuote_button": "ДОБАВИТЬ ЦИТАТУ",
+  "category_knowledge": "Знания",
+  "category_work": "Работа",
+  "category_time": "Время",
+  "category_character": "Характер",
+  "category_happiness": "Счастье",
+
+  "alert_favoriteAdded": "Цитата добавлена в избранное",
+  "alert_favoriteAddedMessage": "Теперь вы будете видеть её чаще в разделе «Вдохновляйтесь своими». Чем больше вы её отмечаете, тем чаще она будет появляться.",
+  "alert_favoriteRemoved": "Цитата удалена из избранного",
+  "loading": "Загрузка...",
+  "favoritePage_title": "Вдохновляйтесь избранными цитатами",
+  
+  "about_paragraph1": "Иногда обычное высказывание может сильно повлиять на нас. Удачный афоризм или мотивационная цитата могут помочь преодолеть неудачу или решиться на важное действие.",
+  "about_paragraph2": "Также иногда важно напоминать себе о данных самому себе обещаниях.",
+  "about_paragraph3_part1": "Именно для этого создано FraseApp. Вы выбираете свои любимые",
+  "about_paragraph3_link1": "цитаты",
+  "about_paragraph3_middle": "или",
+  "about_paragraph3_link2": "добавляете свои",
+  "about_paragraph3_part2": ", а позже приложение будет напоминать вам о них.",
+  "about_paragraph4": "При просмотре фраз вы можете их оценивать, и это влияет на то, как часто фраза будет появляться.",
+  "about_link_start": "Начните с выбора нескольких фраз из нашего списка."
+}

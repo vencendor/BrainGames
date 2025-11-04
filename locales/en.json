@@ -1,0 +1,45 @@
+{
+  "title": "FraseApp",
+
+  "title_favorite": "Selected quotes",
+  "title_notFavorite": "You don't have any featured quotes yet",
+  "title_notFavoriteLink": "Go to New Quotes",
+  "menu_newQuotes": "New Quotes",
+  "menu_yourQuotes": "Get Inspired by Yours",
+  "menu_favoriteQuotes": "Favorites",
+  "menu_addQuotes": "Add your quote",
+  "menu_settings": "Settings",
+  "menu_about": "About the App",
+
+  "settings_reminders": "Reminders with your phrases",
+  "settings_addTimeButton": "ADD TIME",
+  "settings_disableNotificationsButton": "DISABLE NOTIFICATIONS",
+
+  "settings_reminderTime": "Time for inspiration",
+  "addQuote_placeholder": "Enter your quote...",
+  "addQuote_selectCategories": "Select categories:",
+  "addQuote_rateQuote": "Rate the quote:",
+  "addQuote_button": "ADD QUOTE",
+  "category_knowledge": "Knowledge",
+  "category_work": "Work",
+  "category_time": "Time",
+  "category_character": "Character",
+  "category_happiness": "Happiness",
+
+  "alert_favoriteAdded": "Quote added to favorites",
+  "alert_favoriteAddedMessage": "You will now see it more often in the 'Get Inspired' section. The more you like it, the more often it will appear.",
+  "alert_favoriteRemoved": "Quote removed from favorites",
+  "loading": "Loading...",
+  "favoritePage_title": "Get inspired by selected quotes",
+  
+    "about_paragraph1": "Sometimes an ordinary statement can have a strong impact on us. A well-chosen aphorism or motivational quote can help overcome a setback or decide on an important action.",
+    "about_paragraph2": "It is also sometimes important to remind yourself of the promises you made to yourself.",
+    "about_paragraph3_part1": "This is exactly what FraseApp is for. You choose your favorite",
+    "about_paragraph3_link1": "quotes",
+    "about_paragraph3_middle": "or",
+    "about_paragraph3_link2": "add your own",
+    "about_paragraph3_part2": ", and later the app will remind you about them.",
+    "about_paragraph4": "When viewing phrases, you can rate them, which affects how often the phrase will appear.",
+    "about_link_start": "Start by choosing a few phrases from our list."
+  
+}
