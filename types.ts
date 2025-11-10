@@ -3,10 +3,11 @@ export type GameType = {
   text?: string // текст цитаты
   name?: string // текст цитаты
   description: string
+  progress: number // прогресс выполнения в процентах
+  image?: string // путь к изображению иконки игры
 }
 
 export type GameListType = GameType[]
-
 
 export type NotificationType = {
   time: string // время в формате HH:mm

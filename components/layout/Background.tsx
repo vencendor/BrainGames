@@ -1,4 +1,4 @@
-import { ImageBackground, StyleSheet } from 'react-native'
+import { ImageBackground, StyleSheet, View } from 'react-native'
 
 type PropsType = {
   children: React.ReactNode
@@ -16,17 +16,16 @@ const Background = (props: PropsType) => {
   // Randomly select a background image
   const imageIndex = Math.floor(Math.random() * backgroundImages.length)
   const randomImage = backgroundImages[imageIndex]
-  return (
-    <ImageBackground source={randomImage} style={styles.background}>
-      {props.children}
-    </ImageBackground>
-  )
+  return <View style={styles.background}>
+    {props.children}
+    </View>
 }
 
 export default Background
 
 const styles = StyleSheet.create({
   background: {
+    backgroundColor: '#293646',
     width: '100%',
     height: '100%',
     alignItems: 'center',

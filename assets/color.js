@@ -5,7 +5,7 @@ import Background from '@/components/layout/Background'
 
 // const baseColor = '#E17723'
 // const baseColor = '#E28437'
-const baseColor = '#E38A46'
+const baseColor = '#546E8F'
 
 
 // const baseColor = '#E39758'
@@ -15,7 +15,7 @@ export default {
   navigationColor: textColor,
   quoteText: '#444',
   primaryBackground: baseColor,
-  secondaryBackground: '#fff',
+  secondaryBackground: '#293646',
   menuBurger: baseColor,
   colorText: '#fff',
   overlay: 'rgba(0, 0, 0, 0.5)',

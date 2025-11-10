@@ -5,14 +5,7 @@ import {
 } from '@expo-google-fonts/nunito'
 import axios from 'axios'
 import { Link } from 'expo-router'
-import {
-  Modal,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-  View
-} from 'react-native'
-
+import { Modal, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
 import {
   GoogleSignin,
@@ -27,7 +20,7 @@ import {
   PlusCircle,
   Rocket,
   Settings,
-  Star
+  Star,
 } from 'lucide-react-native'
 
 const GOOGLE_ANDROID_CLIENT_ID =
@@ -124,88 +117,55 @@ const MenuApp = () => {
           animationType="fade"
           onRequestClose={toggleMenu}
         >
+          <TouchableOpacity style={styles.overlay} onPress={toggleMenu} />
 
-            <TouchableOpacity style={styles.overlay} onPress={toggleMenu} />
-
-            <View style={styles.menuContainer}>
-              <View style={styles.userContainer}>
-                <View style={styles.avatarContainer}></View>
-                <Text style={styles.menuText}>Михаил круг</Text>
-                <TouchableOpacity
-                  style={styles.userAuthorization}
-                  onPress={signIn}
-                >
-                  <Text> Авторизация</Text>
-                </TouchableOpacity>
-              </View>
-              <TouchableOpacity style={styles.menuItem}>
-                <Lightbulb size={22} color={colors.colorText} />
-                <Link href="/BrowseQuotes" style={styles.menuText}>
-                  Новые цитаты
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.menuItem}>
-                <Rocket size={22} color={colors.colorText} />
-                <Link href="/BrowseFavorites" style={styles.menuText}>
-                  Вдохновляйся своими
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.menuItem}>
-                <Star size={22} color={colors.colorText} />
-                <Link href="/FavoritesList" style={styles.menuText}>
-                  Список ваших избранных
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.menuItem}>
-                <PlusCircle size={22} color={colors.colorText} />
-                <Link href="/AddNewQuote" style={styles.menuText}>
-                  Добавить свою
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.menuItem}>
-                <Settings size={22} color={colors.colorText} />
-                <Link href="/SettingsPage" style={styles.menuText}>
-                  Настройки
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
-              </TouchableOpacity>
-              <TouchableOpacity style={styles.menuItem}>
-                <Info size={22} color={colors.colorText} />
-                <Link href="/aboutApp" style={styles.menuText}>
-                  О приложении
-                </Link>
-                <ChevronRight
-                  size={22}
-                  color={colors.colorText}
-                  style={styles.iconArrow}
-                />
+          <View style={styles.menuContainer}>
+            <View style={styles.userContainer}>
+              <View style={styles.avatarContainer}></View>
+              <Text style={styles.menuText}>Михаил круг</Text>
+              <TouchableOpacity
+                style={styles.userAuthorization}
+                onPress={signIn}
+              >
+                <Text> Авторизация</Text>
               </TouchableOpacity>
             </View>
 
+            <TouchableOpacity style={styles.menuItem}>
+              <Settings size={22} color={colors.colorText} />
+              <Link href="/" style={styles.menuText}>
+                Главная
+              </Link>
+              <ChevronRight
+                size={22}
+                color={colors.colorText}
+                style={styles.iconArrow}
+              />
+            </TouchableOpacity>
+
+            <TouchableOpacity style={styles.menuItem}>
+              <Settings size={22} color={colors.colorText} />
+              <Link href="/SettingsPage" style={styles.menuText}>
+                Настройки
+              </Link>
+              <ChevronRight
+                size={22}
+                color={colors.colorText}
+                style={styles.iconArrow}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.menuItem}>
+              <Info size={22} color={colors.colorText} />
+              <Link href="/aboutApp" style={styles.menuText}>
+                О приложении
+              </Link>
+              <ChevronRight
+                size={22}
+                color={colors.colorText}
+                style={styles.iconArrow}
+              />
+            </TouchableOpacity>
+          </View>
         </Modal>
       </View>
     )
@@ -246,6 +206,7 @@ const styles = StyleSheet.create({
   },
   burgerButton: {
     paddingRight: 10,
+    marginBottom: 20,
   },
   line: {
     width: 30,
